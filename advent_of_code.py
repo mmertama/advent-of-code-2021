@@ -1,6 +1,7 @@
 import day1
 import day2
 import day3
+import day4
 
 import time
 
@@ -35,5 +36,12 @@ if __name__ == "__main__":
 
     day3.life_support(read_example(day3.example))
     day3.life_support(read_input('data/input3.txt'))
+
+    day4.play_bingo(read_example(day4.example))
+    day4.play_bingo(read_input('data/input4.txt'))
+
+    day4.play_last_bingo(read_example(day4.example))
+    day4.play_last_bingo(read_input('data/input4.txt'))
+
 
 
