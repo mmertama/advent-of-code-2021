@@ -2,6 +2,7 @@ import day1
 import day2
 import day3
 import day4
+import day5
 
 import time
 
@@ -19,7 +20,7 @@ def read_input(fn):
 
 
 if __name__ == "__main__":
-    print("day 1", flush=True)
+    '''
     day1.count_ascent(read_example(day1.example))
     day1.count_ascent(read_input('data/input1.txt'))
     day1.count_ascent_sliding_window(read_example(day1.example))
@@ -42,6 +43,10 @@ if __name__ == "__main__":
 
     day4.play_last_bingo(read_example(day4.example))
     day4.play_last_bingo(read_input('data/input4.txt'))
+    '''
+    day5.line_overlap_orthogonal(read_example(day5.example))
+    day5.line_overlap_orthogonal(read_input('data/input5.txt'))
 
-
+    day5.line_overlap_all(read_example(day5.example))
+    day5.line_overlap_all(read_input('data/input5.txt'))
 
