@@ -5,6 +5,7 @@ import day4
 import day5
 import day6
 import day7
+import day8
 
 import time
 
@@ -56,10 +57,16 @@ if __name__ == "__main__":
     day6.lantern_fish_population(read_input('data/input6.txt'), 80)
     day6.lantern_fish_population(read_example(day6.example), 256)
     day6.lantern_fish_population(read_input('data/input6.txt'), 256)
-    '''
+    
     day7.align_submarines(read_example(day7.example))
     day7.align_submarines(read_input('data/input7.txt'))
 
     day7.align_submarines_x2(read_example(day7.example))
     day7.align_submarines_x2(read_input('data/input7.txt'))
+    '''
 
+    day8.count_easy_digits(read_example(day8.example))
+    day8.count_easy_digits(read_input('data/input8.txt'))
+
+    day8.digit_output(read_example(day8.example))
+    day8.digit_output(read_input('data/input8.txt'))
