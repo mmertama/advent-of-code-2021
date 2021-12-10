@@ -6,6 +6,8 @@ import day5
 import day6
 import day7
 import day8
+import day9
+import day10
 
 import time
 
@@ -63,10 +65,24 @@ if __name__ == "__main__":
 
     day7.align_submarines_x2(read_example(day7.example))
     day7.align_submarines_x2(read_input('data/input7.txt'))
-    '''
+    
 
     day8.count_easy_digits(read_example(day8.example))
     day8.count_easy_digits(read_input('data/input8.txt'))
 
     day8.digit_output(read_example(day8.example))
     day8.digit_output(read_input('data/input8.txt'))
+    
+    day9.risk_level_sum(read_example(day9.example))
+    day9.risk_level_sum(read_input('data/input9.txt'))
+
+    day9.basin_top_mul(read_example(day9.example))
+    day9.basin_top_mul(read_input('data/input9.txt'))
+    '''
+    day10.corrupt_score(read_example(day10.example))
+    day10.corrupt_score(read_input('data/input10.txt'))
+
+    day10.autocomplete_score(read_example(day10.example))
+    day10.autocomplete_score(read_input('data/input10.txt'))
+
+
