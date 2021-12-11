@@ -8,6 +8,7 @@ import day7
 import day8
 import day9
 import day10
+import day11
 
 import time
 
@@ -22,6 +23,14 @@ def read_input(fn):
         for l in f:
             lines.append(l.rstrip())
     return lines
+
+
+def do_example(day, call):
+    day.call(read_example(day.example))
+
+
+def do_solution(day, call):
+    day.call(read_input('data.input'))
 
 
 if __name__ == "__main__":
@@ -78,11 +87,17 @@ if __name__ == "__main__":
 
     day9.basin_top_mul(read_example(day9.example))
     day9.basin_top_mul(read_input('data/input9.txt'))
-    '''
+    
     day10.corrupt_score(read_example(day10.example))
     day10.corrupt_score(read_input('data/input10.txt'))
 
     day10.autocomplete_score(read_example(day10.example))
     day10.autocomplete_score(read_input('data/input10.txt'))
+    '''
 
+    day11.octopus_flash_count(read_example(day11.example))
+    day11.octopus_flash_count(read_input('data/input11.txt'))
+
+    day11.octopus_all_flash(read_example(day11.example))
+    day11.octopus_all_flash(read_input('data/input11.txt'))
 
