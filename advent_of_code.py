@@ -9,6 +9,7 @@ import day8
 import day9
 import day10
 import day11
+import day12
 
 import time
 
@@ -93,11 +94,18 @@ if __name__ == "__main__":
 
     day10.autocomplete_score(read_example(day10.example))
     day10.autocomplete_score(read_input('data/input10.txt'))
-    '''
+    
 
     day11.octopus_flash_count(read_example(day11.example))
     day11.octopus_flash_count(read_input('data/input11.txt'))
 
     day11.octopus_all_flash(read_example(day11.example))
     day11.octopus_all_flash(read_input('data/input11.txt'))
+    '''
+
+    day12.count_paths(read_example(day12.example))
+    day12.count_paths(read_input('data/input12.txt'))
+
+    day12.count_paths2(read_example(day12.example))
+    day12.count_paths2(read_input('data/input12.txt'))
 
