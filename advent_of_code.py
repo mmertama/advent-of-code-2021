@@ -10,6 +10,8 @@ import day9
 import day10
 import day11
 import day12
+import day13
+
 
 import time
 
@@ -101,7 +103,7 @@ if __name__ == "__main__":
 
     day11.octopus_all_flash(read_example(day11.example))
     day11.octopus_all_flash(read_input('data/input11.txt'))
-    '''
+    
 
     day12.count_paths(read_example(day12.example))
     day12.count_paths(read_input('data/input12.txt'))
@@ -109,3 +111,6 @@ if __name__ == "__main__":
     day12.count_paths2(read_example(day12.example))
     day12.count_paths2(read_input('data/input12.txt'))
 
+    '''
+    day13.visible_dots(read_example(day13.example))
+    day13.visible_dots(read_input('data/input13.txt'))
