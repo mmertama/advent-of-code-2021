@@ -12,6 +12,7 @@ import day11
 import day12
 import day13
 import day14
+import day15
 
 
 import time
@@ -115,9 +116,16 @@ if __name__ == "__main__":
     
     day13.visible_dots(read_example(day13.example))
     day13.visible_dots(read_input('data/input13.txt'))
-    '''
+    
+
     day14.common_polymers(read_example(day14.example), 10)
     day14.common_polymers(read_input('data/input14.txt'), 10)
-    day14.common_polymers(read_input('data/input14.txt'), 40)
+    day14.common_polymers(read_input('data/input14.txt'), 20)
 
+    '''
+
+    day15.find_path(read_example(day15.example))
+    day15.find_path(read_input('data/input15.txt'))
+    day15.find_path_extended(read_example(day15.example))
+    day15.find_path_extended(read_input('data/input15.txt'))
 
