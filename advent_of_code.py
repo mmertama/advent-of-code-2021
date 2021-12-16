@@ -13,6 +13,7 @@ import day12
 import day13
 import day14
 import day15
+import day16
 
 
 import time
@@ -122,10 +123,16 @@ if __name__ == "__main__":
     day14.common_polymers(read_input('data/input14.txt'), 10)
     day14.common_polymers(read_input('data/input14.txt'), 20)
 
-    '''
+    
 
     day15.find_path(read_example(day15.example))
     day15.find_path(read_input('data/input15.txt'))
     day15.find_path_extended(read_example(day15.example))
     day15.find_path_extended(read_input('data/input15.txt'))
+    '''
+    # day16.parse_transmissions(read_example(day16.example0))
+    day16.parse_transmissions(read_input('data/input16.txt'))
 
+    # day16.calc_transmissions(read_example(day16.example1))
+
+    day16.calc_transmissions(read_input('data/input16.txt'))
