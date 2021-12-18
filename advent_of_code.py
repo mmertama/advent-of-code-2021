@@ -14,7 +14,8 @@ import day13
 import day14
 import day15
 import day16
-
+import day17
+import day18
 
 import time
 
@@ -129,10 +130,22 @@ if __name__ == "__main__":
     day15.find_path(read_input('data/input15.txt'))
     day15.find_path_extended(read_example(day15.example))
     day15.find_path_extended(read_input('data/input15.txt'))
-    '''
+    
     # day16.parse_transmissions(read_example(day16.example0))
     day16.parse_transmissions(read_input('data/input16.txt'))
 
     # day16.calc_transmissions(read_example(day16.example1))
 
     day16.calc_transmissions(read_input('data/input16.txt'))
+    
+    day17.trajectory_high(day17.example)
+    day17.trajectory_high(day17.input_1)
+
+    day17.count_trajectory(day17.example)
+    day17.count_trajectory(day17.input_1)
+    '''
+    day18.snail_fish_magnitude(read_example(day18.example))
+    day18.snail_fish_magnitude(read_input('data/input18.txt'))
+
+    day18.largest_snail_fish_magnitude(read_example(day18.example))
+    day18.largest_snail_fish_magnitude(read_input('data/input18.txt'))
