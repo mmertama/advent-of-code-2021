@@ -128,3 +128,4 @@ def common_polymers(data, steps):
     most_common = max(counter, key=lambda x: counter[x])
     least_common = min(counter, key=lambda x: counter[x])
     print("Common polymer", counter[most_common] - counter[least_common])
+
