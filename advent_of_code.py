@@ -17,6 +17,7 @@ import day16
 import day17
 import day18
 import day19
+import day20
 
 import time
 
@@ -150,14 +151,18 @@ if __name__ == "__main__":
 
     day18.largest_snail_fish_magnitude(read_example(day18.example))
     day18.largest_snail_fish_magnitude(read_input('data/input18.txt'))
-    '''
+    
 
     day19.beacon_count(read_example(day19.example))
-    # day19.beacon_count(read_input('data/input19.txt'))
+    day19.beacon_count(read_input('data/input19.txt'))
 
     day19.manhattan_distance(read_example(day19.example))
     day19.manhattan_distance(read_input('data/input19.txt'))
+    '''
 
+    day20.count_lit_pixels(read_example(day20.example), 2)
+    day20.count_lit_pixels(read_input('data/input20.txt'), 2)
 
-
+    day20.count_lit_pixels(read_example(day20.example), 50)
+    day20.count_lit_pixels(read_input('data/input20.txt'), 50)
 
