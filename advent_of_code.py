@@ -16,6 +16,7 @@ import day15
 import day16
 import day17
 import day18
+import day19
 
 import time
 
@@ -143,9 +144,20 @@ if __name__ == "__main__":
 
     day17.count_trajectory(day17.example)
     day17.count_trajectory(day17.input_1)
-    '''
+    
     day18.snail_fish_magnitude(read_example(day18.example))
     day18.snail_fish_magnitude(read_input('data/input18.txt'))
 
     day18.largest_snail_fish_magnitude(read_example(day18.example))
     day18.largest_snail_fish_magnitude(read_input('data/input18.txt'))
+    '''
+
+    day19.beacon_count(read_example(day19.example))
+    # day19.beacon_count(read_input('data/input19.txt'))
+
+    day19.manhattan_distance(read_example(day19.example))
+    day19.manhattan_distance(read_input('data/input19.txt'))
+
+
+
+
