@@ -18,6 +18,7 @@ import day17
 import day18
 import day19
 import day20
+import day21
 
 import time
 
@@ -158,11 +159,19 @@ if __name__ == "__main__":
 
     day19.manhattan_distance(read_example(day19.example))
     day19.manhattan_distance(read_input('data/input19.txt'))
-    '''
+    
 
     day20.count_lit_pixels(read_example(day20.example), 2)
     day20.count_lit_pixels(read_input('data/input20.txt'), 2)
 
     day20.count_lit_pixels(read_example(day20.example), 50)
     day20.count_lit_pixels(read_input('data/input20.txt'), 50)
+    '''
+
+    day21.dirac_dice_practice(4, 8)
+    day21.dirac_dice_practice(6, 7)
+
+    day21.dirac_dice(4, 8)
+    day21.dirac_dice(6, 7)
+
 
