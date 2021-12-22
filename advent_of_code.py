@@ -19,6 +19,7 @@ import day18
 import day19
 import day20
 import day21
+import day22
 
 import time
 
@@ -166,12 +167,18 @@ if __name__ == "__main__":
 
     day20.count_lit_pixels(read_example(day20.example), 50)
     day20.count_lit_pixels(read_input('data/input20.txt'), 50)
-    '''
-
+    
+    
     day21.dirac_dice_practice(4, 8)
     day21.dirac_dice_practice(6, 7)
 
     day21.dirac_dice(4, 8)
     day21.dirac_dice(6, 7)
+    '''
 
+    day22.cubes_on100x100x100(read_example(day22.example))
+    day22.cubes_on100x100x100(read_input('data/input22.txt'))
 
+    day22.cubes_on100x100x100(read_example(day22.example))
+    day22.cubes_on_all(read_example(day22.example_part2))
+    day22.cubes_on_all(read_input('data/input22.txt'))
