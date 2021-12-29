@@ -138,6 +138,7 @@ example = '''--- scanner 0 ---
 30,-46,-14
 '''
 
+
 def permuted(v):
     p = [None] * 48
     p1 = [x[:3] for x in itertools.permutations([v[0], v[1], v[2]])]
@@ -192,6 +193,7 @@ def parse_scanners(data):
             scanners[-1].append(tuple(int(x) for x in ln.split(',')))
     return scanners
 
+
 def find_matches(points0, points1):
     deltas = {}
     found = None
@@ -221,7 +223,6 @@ def calc_values(scanners):
     slen = len(scanners)
     for j in range(slen):
         for i in range(slen):
-        #for i in range(j + 1, slen):
             if i != j:
                 delta = find_matches(scanners[j], scanners[i])
                 rotation_map[(j, i)] = delta
@@ -291,8 +292,7 @@ def manhattan_distance(data):
         scanners[s] = value_list[0]
 
     maximum = 0
-    for j in range(len(scanners)):
-        p0 = scanners[j]
+    for j, p0 in enumerate(scanners):
         for i in range(j + 1, len(scanners)):
             p1 = scanners[i]
             d = (abs(p0[0] - p1[0]),

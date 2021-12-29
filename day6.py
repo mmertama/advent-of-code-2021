@@ -1,4 +1,3 @@
-import math
 example = '''3,4,3,1,2'''
 
 
@@ -31,5 +30,3 @@ def lantern_fish_population(data, days=80):
     for f in fish_states:
         total += f
     print("Population after", days, "is", total)
-
-

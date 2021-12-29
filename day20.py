@@ -123,7 +123,7 @@ def count_lit_pixels(data, steps):
             if at in image:
                 on += 1
 
-    print("pix on", on)
+    print("Pix on", on)
 
 
 

@@ -33,7 +33,7 @@ def trajectory_high(line):
 
 def count_trajectory(line):
     target_x, target_y = parse_target(line)
-    maxima = calc_trajectory_high(target_x, target_y)
+    # maxima = calc_trajectory_high(target_x, target_y)
     sy_min = target_y[0]   # left edge
     sy_max = -target_y[0]  # hmm what is this rationale, I assume this is the top related position discussed with #1 (aka good guess :-)
     sx_min = 1             # just do loop from here

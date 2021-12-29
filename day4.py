@@ -45,13 +45,13 @@ def read_bingo(data):
 def find(value, table):
     r = 0
     c = 0
-    for row in range(0, BINGO_SZ):
-        for col in range(0, BINGO_SZ):
+    for row in range(BINGO_SZ):
+        for col in range(BINGO_SZ):
             if table[row][col][0] == value:
                 count_r = 0
                 count_c = 0
                 table[row][col] = (value, True)
-                for i in range(0, BINGO_SZ):
+                for i in range(BINGO_SZ):
                     if table[row][i][1]:
                         count_r += 1
                     if table[i][col][1]:
@@ -62,8 +62,8 @@ def find(value, table):
 
 def sum_unmarked(table):
     summa = 0
-    for row in range(0, BINGO_SZ):
-        for col in range(0, BINGO_SZ):
+    for row in range(BINGO_SZ):
+        for col in range(BINGO_SZ):
             if not table[row][col][1]:
                 summa += table[row][col][0]
     return summa
@@ -81,8 +81,8 @@ def play_bingo(data):
 
 def reset(tables):
     for table in tables:
-        for row in range(0, BINGO_SZ):
-            for col in range(0, BINGO_SZ):
+        for row in range(BINGO_SZ):
+            for col in range(BINGO_SZ):
                 if table[row][col][1]:
                     table[row][col] = (table[row][col][0], False)
 

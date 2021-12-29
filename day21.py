@@ -4,6 +4,9 @@ Player 2 starting position: 8'''
 input_data = '''Player 1 starting position: 6
 Player 2 starting position: 7'''
 
+example = (4, 8)
+data = (6, 7)
+
 
 def practice_dice(dice):
     dice += 1
@@ -22,7 +25,7 @@ def play_turn(score, start, dice):
     return score, pos, dice
 
 
-def dirac_dice_practice(start1, start2):
+def dirac_dice_practice(start):
     dice = 0
     score1 = 0
     score2 = 0
@@ -33,12 +36,12 @@ def dirac_dice_practice(start1, start2):
 
     while True:
         rolls += 3
-        score1, start1, dice = play_turn(score1, start1, dice)
+        score1, start1, dice = play_turn(score1, start[0], dice)
         if score1 >= 1000:
             show_loser(score2)
             break
         rolls += 3
-        score2, start2, dice = play_turn(score2, start2, dice)
+        score2, start2, dice = play_turn(score2, start[1], dice)
         if score1 >= 1000:
             show_loser(score1)
             break
@@ -54,7 +57,7 @@ def move_list(start):
     return moves
 
 
-def dirac_dice(start1, start2):
+def dirac_dice(start):
 
     cache = {}
 
@@ -86,6 +89,6 @@ def dirac_dice(start1, start2):
 
         return wins
         
-    w = play((start1 - 1, 0, 1), (start2 - 1, 0, 2))
+    w = play((start[0] - 1, 0, 1), (start[1] - 1, 0, 2))
 
     print("Winner is", "player1 " if w[0] > w[1] else "player2", "with", w[0] if w[0] > w[1] else w[1], "universes!")
